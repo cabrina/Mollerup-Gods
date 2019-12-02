@@ -1,21 +1,23 @@
 import React from 'react';
 import Header from '../src/components/Header/Header';
-import Intro from '../src/components/Intro/Intro'
-import '../src/index.scss';
-import News from './components/News/News';
-import Activities from './components/Activities/Activities';
-import Outro from './components/Outro/Outro';
 import Footer from './components/Footer/Footer';
+import Home from './components/Home/Home';
+
+import { BrowserRouter, Route} from 'react-router-dom'
+import Verdensballetten from './components/Verdensballetten';
+import Nyhederne from './components/Nyhederne'
 
 function App() {
   return (
     <div className="App">
-     <Header />
-     <Intro />
-     <News />
-     <Activities />
-     <Outro />
-     <Footer />
+      <BrowserRouter>
+        <Header />
+          <Route exact path="/" component={Home} />
+          <Route path="/VerdensBalletten" component={Verdensballetten} />
+          <Route path="/Nyhederne" component={Nyhederne} />
+
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

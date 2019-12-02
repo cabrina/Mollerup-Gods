@@ -1,16 +1,14 @@
 import React from 'react';
-import dkclogo from '../../assets/DKC.png';
-import insta from '../../imgs/Udklip.PNG';
 
 export default function Outro() {
     return (
         <div className="outro">
             <div className="outrotop">
-                <img src={dkclogo} alt="Danske Konferencecentre autoriseret partner"/>
+                <img src="assets/DKC.png" alt="Danske Konferencecentre autoriseret partner"/>
                 <h1>Møllerup Gods er autoriseret partner hos Danske Konferencecentre</h1>
             </div>
             <div className="insta">
-                <img src={insta} alt=""/>
+                <img src="imgs/Udklip.PNG" alt=""/>
             </div>
             <div className="newsletter">
                 <form action="/">

@@ -1,32 +1,33 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     return (
         <nav>
             <ul>
                 <li>
-                    Velkommen
+                    <Link to="/">Velkommen</Link>
                 </li>
                 <li>
-                    Verdensballetten
+                    <Link to="/VerdensBalletten">Verdensballetten</Link>
                 </li>
                 <li>
-                    Nyheder
+                    <Link to="/Nyhederne">Nyheder</Link>
                 </li>
                 <li>
-                    Events og mødefaciliteter
+                    <Link to="/Events">Events og mødefaciliteter</Link>
                 </li>
                 <li>
-                    Hvad siger vores gæster 
+                    <Link to="/Gæsterne">Hvad siger vores gæster</Link> 
                 </li>
                 <li>
-                    om Møllerup Gods
+                    <Link to="/MøllerupGods">om Møllerup Gods</Link> 
                 </li>
                 <li>
-                    Kontakt os
+                    <Link to="/Kontakt">Kontakt os</Link> 
                 </li>
                 <li>
-                    Webshop
+                    <Link to="/Webshop">Webshop</Link> 
                 </li>
             </ul>
         </nav>
