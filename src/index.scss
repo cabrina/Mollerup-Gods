@@ -69,7 +69,7 @@ header {
 
 /*       -------       NEWS       -------       */
 
-.News {
+.news {
     max-width: 1000px;
     margin: 0 auto;
     padding-bottom: 20px;
@@ -77,6 +77,7 @@ header {
 
     .topnews {
         width: 100%;
+        margin: 0 auto;
 
         img {
             width: 100%;
@@ -103,16 +104,17 @@ header {
         }
     }
 
-    .othernews {
+    .news-list {
         width: 100%;
         padding-top: 40px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 600px;
-        grid-gap: 35px;
+        
 
-        .newstemp {
-
+        .news-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 600px;
+            grid-gap: 35px;
+            
             img {
                 width: 100%;
             }
@@ -159,14 +161,16 @@ header {
         padding-bottom: 10px;
     }
 
-    .allact {
+    .act-list {
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 330px 300px 300px 300px;
-        grid-gap: 30px;
+       
 
-        .acttemp{
+        .act-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 330px 300px 300px 300px;
+            grid-gap: 30px;
+            
             img {
                 width: 100%;
                 min-height: 164px;
