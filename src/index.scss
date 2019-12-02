@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+/*   ---   FONTS   ---   */
+
+$pri-font: 'Playfair Display';
+$sec-font: 'Roboto';
+
+/*   ---   COLORS   ---   */
+$grey: #858585;
+$lightgrey: #c5c5c5;
+$mediumgrey: #808080;
+$footer: #e4e4e4;
+
+/*   ---   GLOBAL   ---   */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+/*       -------       HEADER       -------       */
+
+header {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    img {
+        margin: 60px 0 40px 0;
+    }
+
+    nav {
+        width: 100%;
+        font-family: $pri-font;
+
+        ul {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            li {
+                text-decoration: none;
+                list-style-type: none;
+                font-size: 23px;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+
+/*       -------       INTRO       -------       */
+
+.intro {
+    max-width: 1000px;
+    margin: 40px auto;
+
+    img {
+        width: 100%;
+    }
+}
+
+/*       -------       NEWS       -------       */
+
+.News {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: .5px solid $lightgrey;
+
+    .topnews {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            font-family: $pri-font;
+            font-weight: normal;
+            padding: 10px 0 20px 0;
+            font-size: 28px;
+        }
+
+        p {
+            font-family: $sec-font;
+            font-size: 14px;
+            color: $grey;
+            padding-bottom: 20px;
+        }
+
+        a {
+            font-family: $sec-font;
+            font-size: 14px;
+            color: $grey ;
+        }
+    }
+
+    .othernews {
+        width: 100%;
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 600px;
+        grid-gap: 35px;
+
+        .newstemp {
+
+            img {
+                width: 100%;
+            }
+
+            h2 {
+                font-family: $pri-font;
+                font-size: 23px;
+                padding-bottom: 10px;
+            }
+
+            p {
+                font-family: $sec-font;
+                font-size: 13px;
+                color: $grey;
+                line-height: 26px;
+                padding-bottom: 10px;
+            }
+
+            a {
+                font-family: $sec-font;
+                font-size: 13px;
+                color: $grey;
+            }
+        }
+    }
+}
+
+/*       -------       ACTIVITIES       -------       */
+
+.activities {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h1 {
+        font-family: $pri-font;
+        font-size: 28px;
+    }
+
+    p {
+        font-family: $sec-font;
+        font-size: 13px;
+        color: $grey;
+        line-height: 26px;
+        padding-bottom: 10px;
+    }
+
+    .allact {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 330px 300px 300px 300px;
+        grid-gap: 30px;
+
+        .acttemp{
+            img {
+                width: 100%;
+                min-height: 164px;
+            }
+
+            h2 {
+                font-family: $pri-font;
+                font-size: 23px;
+                padding-bottom: 10px;
+            }
+
+            a {
+                font-family: $sec-font;
+                font-size: 13px;
+                color: $grey;
+            }
+        }
+    }
+}
+
+/*       -------       OUTRO       -------       */
+
+.outro {
+    max-width: 1000px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 220px 1070px;
+    grid-column-gap: 50px;
+
+    .outrotop {
+        h1 {
+            font-family: $pri-font;
+            font-size: 18px;
+            width: 400px;
+            color: $grey;
+            padding-top: 10px;
+        }
+    }
+
+    .insta {
+        grid-column: 1/2;
+        grid-row: 2/-1;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .newsletter {
+        grid-column: 2/-1;
+        grid-row: 2/-1;
+        background-color: #fff;
+        height: 500px;
+        padding: 30px 10px 0 10px;
+        span {
+            color: red;
+        }
+        form {
+            font-family: $sec-font;
+            
+            .tilmeld {
+                font-size: 23px;
+                font-weight: bold;
+                color: $grey;
+                text-align: center;
+            }
+
+            .req {
+                text-align: right;
+                padding-top: 20px;
+                font-size: 11px;
+
+                
+            }
+
+            label {
+                padding-top: 20px;
+                display: block;
+                color: $mediumgrey;
+            }
+
+            input {
+                height: 35px;
+                width: 100%;
+                border: .5px solid $mediumgrey;
+                border-radius: 3px;
+                font-size: 20px;
+                font-weight: normal;
+            }
+
+            .checkboxes {
+                padding-top: 5px;
+
+                .check {
+                    padding-top: 10px;
+                    display: inline;
+                }
+    
+                .checkinp {
+                    height: 15px;
+                    width: 15px;
+    
+                }
+           
+            }
+
+            .picknews {
+                padding: 6px 0 6px 0;
+                font-size: 16px;
+                font-weight: bold;
+                color: $grey;
+            }
+
+            .sub {
+                width: 110px;
+                border: none;
+                background-color: $lightgrey;
+                color: #fff;
+                font-family: $pri-font;
+                font-size: 16px;
+                margin-top: 20px;
+            }
+        }
+    }
+       
+}
+
+/*       -------       FOOTER       -------       */
+
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: $footer;
+
+    .footercontent {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+
+        div {
+            padding: 30px 150px 0 0;
+            color: $mediumgrey;
+            font-family: $pri-font;
+            font-size: 14px;
+
+            p {
+                padding-bottom: 10px;
+            }
+
+        }
+
+    }
+}
