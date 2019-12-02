@@ -8,7 +8,8 @@ export default function Outro() {
                 <h1>Møllerup Gods er autoriseret partner hos Danske Konferencecentre</h1>
             </div>
             <div className="insta">
-                <img src="imgs/Udklip.PNG" alt=""/>
+            <iframe title="instagram feed" className="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/p/BUZDt1Ilwc8/embed/captioned/?cr=1&amp;v=7&amp;wp=638&amp;rd=https%3A%2F%2Fwww.moellerupgods.dk&amp;rp=%2Fda#%7B%22ci%22%3A0%2C%22os%22%3A2401.8599999999424%7D" allowtransparency="true" allowFullScreen={true} frameBorder="0" height="948" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style={{background: 'white', maxWidth: '635px', width: 'calc(100% - 2px)', borderRadius: '3px', border: '1px solid rgb(219, 219, 219)', boxShadow: 'none', display: 'block', margin: '0px 0px 12px', minWidth: '326px', padding: '0px'}}></iframe>
+
             </div>
             <div className="newsletter">
                 <form action="/">
